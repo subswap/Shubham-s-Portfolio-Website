@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/f44fcf5e15.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="header" id="header1">
+      <div class="container">
+        <nav>
+          <h1 class="logo" style="font-size: 2.5rem"><span>S</span>hubham.</h1>
+          <ul id="sidemenu">
+            <li><a href="#header1">Home</a></li>
+            <li><a href="#about1">About</a></li>
+            <li><a href="#services1">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#contact1">Contact </a></li>
+            <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <h1 class="writing">
+            Hey my name is <span>Shubham</span><br />
+            and I am a <span id="element"></span>
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!-- --------------------About---------------- -->
+
+    <div class="about" id="about1">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="user1.jpeg" alt="error" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde,
+              atque assumenda placeat rerum in iusto facilis officia soluta
+              blanditiis minus sapiente repellendus iste doloribus consectetur!
+              Harum maiores voluptate eligendi adipisci, repudiandae quam sint.
+              Consectetur recusandae accusamus, magni laudantium explicabo aut.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>UI/UX</span><br />Designing Web App Interfaces</li>
+                <li><span>Web Development</span><br />Web App Development</li>
+                <li>
+                  <span>App Developmnt</span><br />Building Andriod/ IOS Apps
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>June 2020- Current</span><br />Senior Associate at
+                  Visionet Systems
+                </li>
+                <li>
+                  Feb 2020- June 2020<span></span><br />Associate at One Point
+                  One Solutions Pvt Ltd
+                </li>
+                <li>
+                  <span>Apr 2018 - Nov 2018</span><br />Associate Software
+                  Developer at Accenture
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2023</span><br />MERN Stack Training at Ethnus
+                  Codemithra
+                </li>
+                <li><span>2018</span><br />B Tech from KIIT University</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- --------------Services--------- -->
+
+    <div class="services" id="services1">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi
+              reprehenderit itaque totam! Adipisci nihil non impedit quidem a,
+              mollitia quis.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop"></i>
+            <h2>UI/UX Design</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi
+              reprehenderit itaque totam! Adipisci nihil non impedit quidem a,
+              mollitia quis.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>App Design</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi
+              reprehenderit itaque totam! Adipisci nihil non impedit quidem a,
+              mollitia quis.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- -------------Contact---------------- -->
+
+    <div class="contact" id="contact1">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i>shub.bhowmick123@gmail.com
+            </p>
+            <p><i class="fa-solid fa-phone-volume"></i>7684906341</p>
+            <div class="social-icons">
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter-square"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <i class="fa-solid fa-download"></i>
+            <a href="Shubham's Resume (2).pdf" download class="btn btn-2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn" onclick="msgsent()">
+                Submit
+              </button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>
+        Copyright &#169; Shubham. Made with <i class="fa-solid fa-heart"></i>
+      </p>
+    </div>
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Web Developer", "UI/UX Developer", "React Developer."],
+        typeSpeed: 50,
+      });
+    </script>
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemenu.style.right = 0;
+      }
+
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+      function msgsent() {
+        document.getElementById("msg").innerHTML = "The message has been sent!";
+      }
+    </script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbyMkzZumPeZIOmKMGZ6ywriPX0r5c2SHlOPME-ZfzOp1oG7h2VPsczYrJJVIkWWZ9SE8g/exec";
+      const form = document.forms["submit-to-google-sheet"];
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => console.log("Success!", response))
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
