@@ -265,6 +265,18 @@ form .btn {
   color: #ff004f;
 }
 
+nav ul li a:hover {
+  color: #ff004f;
+}
+.logo:hover {
+  color: #ff004f;
+  transition: 1s;
+}
+.sub-title:hover {
+  color: #ff004f;
+  transition: 1s;
+}
+
 /* ----------------CSS FOR SMALL Screen------------ */
 
 nav .fa-solid {
@@ -272,12 +284,13 @@ nav .fa-solid {
 }
 @media only screen and (max-width: 600px) {
   .header-text {
-    margin-top: 100%;
-    font-size: 16px;
+    font-size: 8px;
+    font-weight: lighter;
   }
   .header-text h1 {
-    font-size: 30px;
+    font-size: 8px;
   }
+
   nav .fa-solid {
     display: block;
     font-size: 25px;
